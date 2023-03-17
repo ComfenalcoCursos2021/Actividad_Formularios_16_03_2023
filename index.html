@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <form method="post" action="api.php">
+        <fieldset>
+            <legend>Datos del documento</legend>
+            <div>
+                <label>Tipo de documento</label>
+                <select name="TipoDeDocumento">
+                    <option value="CC">Cedula</option>
+                    <option value="TI">Targeta de identidad</option>
+                    <option value="CE">Cedula de extrangeria</option>
+                </select>
+            </div>
+            <div>
+                <label>Numero documento</label>
+                <input type="number" name="documento" required>
+            </div>
+            <div>
+                <label>Fecha nacimiento</label>
+                <input type="date" name="fechaNacimiento">
+            </div>
+            <div>
+                <label>Fecha de expedicion</label>
+                <input type="date" name="fechaExpedicion">
+            </div>
+        </fieldset>
+        
+        <div>
+            <label>Hora</label>
+            <input type="time" name="Hora">
+        </div>
+        <div>
+            <label>Elija la semana</label>
+            <input type="week" name="semana">
+        </div>
+        <div>
+            <label>Elija un color</label>
+            <input type="color" name="color">
+        </div>
+        <div>
+            <label>Genero</label>
+            <div>
+                <input type="radio" name="genero" value="M"><label>Masculino</label>
+                <input type="radio" name="genero" value="F"><label>Femenino</label>
+                <input type="radio" name="genero" value="B"><label>Bisexual</label>
+                <input type="radio" name="genero" value="PX"><label>Pansexual</label>
+                <input type="radio" name="genero" value="PA"><label>Poliamor</label>
+                <input type="radio" name="genero" value="Otros"><label>Otros</label>
+            </div>
+        </div>
+        <div>
+            <label>Pasatiempo</label>
+            <div>
+                <input type="checkbox" name="pasatiempo" value="Programar"><label>Programar</label>
+                <input type="checkbox" name="pasatiempo" value="Escuchar Musica"><label>Escuchar Musica</label>
+                <input type="checkbox" name="pasatiempo" value="Cocinar"><label>Cocinar</label>
+                <input type="checkbox" name="pasatiempo" value="GYM"><label>GYM</label>
+            </div>
+        </div>
+
+        <div>
+            <label>Mensaje</label><br>
+            <textarea name="mensaje" cols="20" rows="5"></textarea>
+        </div>
+       
+
+
+        <input type="submit" value="enviar">
+    </form>
+
+
+    <pre>
+
+    </pre>
+</body>
+</html>
